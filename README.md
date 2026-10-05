@@ -96,7 +96,7 @@ The global Managed DNS and Traffic Steering market size is estimated at **$2.1 B
 
 1. Fork the repository.
 2. Add/edit entries in `README.md` (following the established tabular or list format).
-3. Ensure links, star badges, and descriptions are factual and up-to-date.
+3. Ensure links, Stars_Badges, and descriptions are factual and up-to-date.
 4. Submit a Pull Request with a short summary of your changes.
 
 ---
