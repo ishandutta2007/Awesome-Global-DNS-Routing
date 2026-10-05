@@ -1,4 +1,4 @@
-<svg width="100%" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" fill="none">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a" />
@@ -10,71 +10,68 @@
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
-    </linearGradient>
-    <style>
-      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 38px; fill: #ffffff; }
-      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 16px; fill: #94a3b8; }
-      .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
-      
-      /* Dynamic Animated Pulse & Flow Elements */
-      .pulse-circle {
-        animation: pulse 3s infinite alternate ease-in-out;
-      }
-      .dash-line {
-        stroke-dasharray: 8 6;
-        animation: dash 20s linear infinite;
-      }
-      .node-glow {
-        animation: glow 2s infinite alternate;
-      }
-
-      @keyframes pulse {
-        0% { transform: scale(0.98); opacity: 0.4; }
-        100% { transform: scale(1.02); opacity: 0.8; }
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: -100; }
-      }
-      @keyframes glow {
-        0% { r: 4px; opacity: 0.5; }
-        100% { r: 7px; opacity: 1; }
-      }
-    </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="240" rx="16" fill="url(#bgGrad)"/>
-  
-  <!-- Subtle Grid Pattern Background -->
-  <g opacity="0.08">
-    <path d="M0 40H900 M0 80H900 M0 120H900 M0 160H900 M0 200H900" stroke="#ffffff" stroke-width="1"/>
-    <path d="M150 0V240 M300 0V240 M450 0V240 M600 0V240 M750 0V240" stroke="#ffffff" stroke-width="1"/>
-  </g>
-
-  <!-- Dynamic / Animated Background Graphics (Behind Foreground Text) -->
-  <g opacity="0.4">
-    <!-- Anycast Network Routes -->
-    <path d="M 600 180 Q 680 120 780 160 T 880 90" fill="none" stroke="url(#accentGrad)" stroke-width="2" class="dash-line"/>
-    <path d="M 550 60 Q 650 140 740 70 T 850 180" fill="none" stroke="#38bdf8" stroke-width="1.5" class="dash-line" opacity="0.6"/>
+  <style>
+    .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 38px; fill: #ffffff; }
+    .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 16px; fill: #94a3b8; }
+    .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
     
-    <!-- Animated Network Nodes -->
-    <circle cx="680" cy="120" r="5" fill="#38bdf8" class="node-glow"/>
-    <circle cx="780" cy="160" r="5" fill="#818cf8" class="node-glow"/>
-    <circle cx="740" cy="70" r="5" fill="#c084fc" class="node-glow"/>
-    <circle cx="850" cy="180" r="5" fill="#38bdf8" class="node-glow"/>
+    .pulse {
+      animation: pulseAnim 3s ease-in-out infinite alternate;
+    }
+    .flow-line {
+      stroke-dasharray: 10, 6;
+      animation: flowAnim 15s linear infinite;
+    }
+
+    @keyframes pulseAnim {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      100% { opacity: 0.7; transform: scale(1.02); }
+    }
+    @keyframes flowAnim {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -160; }
+    }
+  </style>
+
+  <!-- Background Card -->
+  <rect width="900" height="240" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Mesh Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="40" x2="900" y2="40" />
+    <line x1="0" y1="80" x2="900" y2="80" />
+    <line x1="0" y1="120" x2="900" y2="120" />
+    <line x1="0" y1="160" x2="900" y2="160" />
+    <line x1="0" y1="200" x2="900" y2="200" />
+    <line x1="150" y1="0" x2="150" y2="240" />
+    <line x1="300" y1="0" x2="300" y2="240" />
+    <line x1="450" y1="0" x2="450" y2="240" />
+    <line x1="600" y1="0" x2="600" y2="240" />
+    <line x1="750" y1="0" x2="750" y2="240" />
   </g>
 
-  <!-- Decorative Accent Bar -->
-  <rect x="50" y="42" width="120" height="26" rx="13" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
-  <text x="62" y="59" class="badge-text">🌐 DNS ROUTING</text>
+  <!-- Dynamic / Animated Anycast Network Graphics (Background) -->
+  <g opacity="0.45">
+    <path d="M 560 170 Q 660 100 760 150 T 870 80" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" class="flow-line" />
+    <path d="M 520 60 Q 640 140 730 65 T 840 175" fill="none" stroke="#38bdf8" stroke-width="1.5" class="flow-line" opacity="0.6" />
+    
+    <!-- Network Nodes -->
+    <circle cx="660" cy="100" r="6" fill="#38bdf8" class="pulse" />
+    <circle cx="760" cy="150" r="6" fill="#818cf8" class="pulse" />
+    <circle cx="730" cy="65" r="5" fill="#c084fc" class="pulse" />
+    <circle cx="840" cy="175" r="5" fill="#38bdf8" class="pulse" />
+  </g>
 
-  <!-- FOREGROUND CONTENT (Guaranteed high visibility and clarity) -->
+  <!-- Category Badge -->
+  <rect x="50" y="40" width="135" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+  <text x="62" y="58" class="badge-text">GLOBAL DNS</text>
+
+  <!-- Title & Subtitle (Foreground elements) -->
   <text x="50" y="112" class="title">Awesome Global DNS Routing</text>
   <text x="50" y="148" class="subtitle">Curated Ecosystem of Authoritative DNS, Anycast Steering &amp; Traffic Management</text>
 
-  <!-- Bottom Accent Line -->
-  <rect x="50" y="182" width="800" height="3" rx="1.5" fill="url(#accentGrad)"/>
+  <!-- Bottom Accent Gradient Bar -->
+  <rect x="50" y="184" width="800" height="4" rx="2" fill="url(#accentGrad)" />
 </svg>
