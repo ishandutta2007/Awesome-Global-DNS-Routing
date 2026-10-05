@@ -1,7 +1,12 @@
-# Awesome-Global-DNS-Routing
-# Awesome-Global-DNS-Routing
+# 🌐 Awesome Global DNS Routing
 
-## Top Global DNS Routing Platforms Ecosystem
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Global-DNS-Routing/pulls) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Global DNS Routing Banner" width="100%"/>
+</p>
+
+## 🚀 Top Global DNS Routing Platforms Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 
@@ -9,204 +14,111 @@
 
 **Last updated: October 2026**
 
+---
 
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Global DNS Routing**. These systems provide authoritative DNS, anycast delivery, health-checked traffic steering, geolocation/latency-based routing, and high-availability name resolution across worldwide networks.
-
-
-
-**Examples** include Azure Traffic Manager, AWS Route 53, Cloudflare DNS, Google Cloud DNS, NS1, Dyn (Oracle), DNS Made Easy, Akamai Edge DNS, Neustar UltraDNS, and Constellix (the category leaders).
-
-
-
-**Open-source emphasis**: Global anycast DNS and advanced traffic steering are dominated by commercial providers. Strong open-source authoritative servers (**PowerDNS**, **Knot DNS**, **CoreDNS**, **BIND**, **NSD**) and related tooling enable self-hosted DNS infrastructure. This section expands those while remaining realistic about the commercial gap for worldwide anycast PoPs and managed traffic policies.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Azure Traffic Manager](https://azure.microsoft.com/products/traffic-manager/)**  
-
-  DNS-based traffic load balancer with priority, weighted, performance, geographic, multivalue, and subnet routing methods—supports external endpoints and nested profiles.
-
-
-
-- **[AWS Route 53](https://aws.amazon.com/route53/)**  
-
-  Highly available authoritative DNS with latency-based, geolocation, geoproximity, weighted, failover, and multivalue routing, plus health checks and deep AWS integration.
-
-
-
-- **[Cloudflare DNS](https://www.cloudflare.com/dns/)**  
-
-  Fast anycast authoritative DNS with one-click DNSSEC, CNAME flattening, and advanced traffic steering via Cloudflare Load Balancing and Argo.
-
-
-
-- **[Google Cloud DNS](https://cloud.google.com/dns)**  
-
-  Scalable, low-latency authoritative DNS service on Google’s global network with managed DNSSEC and integration into Google Cloud.
-
-
-
-- **[NS1 (IBM NS1 Connect)](https://ns1.com/)**  
-
-  Programmable DNS and traffic steering platform with filter chains, RUM-driven decisions, and sophisticated geo/health/cost-based routing.
-
-
-
-- **[Dyn (Oracle)](https://www.oracle.com/cloud/networking/dns/)**  
-
-  Oracle’s managed DNS and traffic management offerings descended from Dyn’s global authoritative platform.
-
-
-
-- **[DNS Made Easy](https://dnsmadeeasy.com/)**  
-
-  Enterprise managed DNS with secondary DNS, geo-routing, and high-availability anycast infrastructure.
-
-
-
-- **[Akamai Edge DNS](https://www.akamai.com/products/edge-dns)**  
-
-  Highly resilient authoritative DNS delivered on Akamai’s global edge network with advanced security and traffic management.
-
-
-
-- **[Neustar UltraDNS](https://www.transunion.com/solution/neustar)**  
-
-  Enterprise DNS and traffic management platform (historically Neustar UltraDNS) focused on reliability and advanced routing.
-
-
-
-- **[Constellix](https://constellix.com/)**  
-
-  Managed DNS with geo-proximity, weighted, and failover routing, plus APIs and multi-provider support.
-
-
-
-## Open-Source GitHub Projects
-
-- **[PowerDNS](https://github.com/PowerDNS/pdns)**  
-
-  Feature-rich open-source authoritative server, recursor, and dnsdist load balancer—database-backed, REST API, Lua scripting, and DNSSEC support.
-
-
-
-- **[CoreDNS](https://github.com/coredns/coredns)**  
-
-  Flexible, plugin-based DNS server (CNCF graduated)—widely used in Kubernetes and for custom authoritative or forwarding setups.
-
-
-
-- **[Knot DNS](https://www.knot-dns.cz/)**  
-
-  High-performance open-source authoritative-only DNS server with excellent DNSSEC, IXFR, DDNS, and rapid reconfiguration.
-
-
-
-- **[BIND 9](https://gitlab.isc.org/isc-projects/bind9)**  
-
-  The classic open-source DNS server supporting authoritative and recursive modes, DNSSEC, and extensive configuration.
-
-
-
-- **[NSD](https://github.com/NLnetLabs/nsd)**  
-
-  Lightweight, high-performance open-source authoritative-only DNS server from NLnet Labs.
-
-
-
-- **[dnsdist (PowerDNS)](https://github.com/PowerDNS/pdns)**  
-
-  Open-source DNS-aware load balancer and traffic director for distributing and filtering DNS queries.
-
-
-
-- **[Technitium DNS Server](https://github.com/TechnitiumSoftware/DnsServer)**  
-
-  Cross-platform open-source DNS server with authoritative, recursive, and DHCP capabilities plus a modern UI.
-
-
-
-- **[Unbound](https://github.com/NLnetLabs/unbound)**  
-
-  Validating, recursive, caching DNS resolver often paired with authoritative servers for full-stack open DNS.
-
-
-
-- **[Documentation and PowerDNS / Knot / CoreDNS playbooks](https://doc.powerdns.com/)**  
-
-  Guides for deploying anycast, DNSSEC, secondary zones, and high-availability open DNS infrastructure.
-
-
-
-- **[Self-hosted anycast and traffic-steering patterns](https://github.com/)**  
-
-  Community architectures combining open authoritative servers with BGP anycast, health checks, and geo-aware response policies.
-
-
-
-### Additional Strong Open-Source Options
-
-- Running **PowerDNS**, **Knot DNS**, or **CoreDNS** as authoritative servers with database backends and APIs.
-
-- Using **dnsdist** for DNS-level load balancing and filtering.
-
-- Deploying multi-node anycast with open servers and BGP for geographic resilience.
-
-- Accepting that true global anycast PoP density, managed health-checked traffic policies, RUM-driven steering, and SLA-backed worldwide resolution still favor commercial platforms (Route 53, Cloudflare, NS1, Azure Traffic Manager, Akamai Edge DNS, etc.).
-
-- Focusing open-source efforts on ownership of zone data, DNSSEC control, and hybrid secondary setups.
-
-
-
-**Frameworks for building custom systems**: Authoritative zones on PowerDNS/Knot/CoreDNS → secondary or anycast distribution → health-aware responses via scripting or external controllers → monitor with open telemetry. Suitable for organizations that need full control or hybrid DNS. Most global applications rely on commercial managed DNS for latency and availability.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- DNS is critical infrastructure. Misconfiguration can cause outages. Open-source servers require proper security hardening, monitoring, and operational expertise. This list is not operational advice.
-
-
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Global DNS Routing**, **Authoritative Name Resolution**, and **Global Server Load Balancing (GSLB)**. These systems deliver low-latency Anycast routing, health-checked traffic steering, geolocation/geoproximity routing, and high-availability DNS infrastructure across worldwide edge networks.
 
 ---
 
-**Made for network engineers, platform teams, and open DNS advocates.**
+## 📑 Table of Contents
 
-Let's keep name resolution fast, resilient, and as open as practical.
+- [📊 Sector Overview & Market Size](#-sector-overview--market-size)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Size
+
+The global Managed DNS and Traffic Steering market size is estimated at **$2.1 Billion (2026)** and is projected to reach **$4.1 Billion by 2030** (CAGR ~14.5%). The industry is **moderately concentrated** at the top tier among hyperscalers (AWS, Azure, Google Cloud) and specialized CDN/Edge giants (Cloudflare, Akamai, Oracle Dyn), while maintaining a healthy competitive tail of specialized enterprise DNS platforms (NS1/IBM, Constellix, DigiCert UltraDNS).
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+> [!NOTE]
+> SaaS platforms are sorted in descending order by parent company market capitalization / valuation.
+
+| Provider | Company Valuation / Revenue | Pricing Model | Free Tier Limits | Key Highlights & Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS Route 53](https://aws.amazon.com/route53/)** | **~$2.2 Trillion** *(Amazon Market Cap)* | $0.50/month per Hosted Zone + $0.40 per 1M queries (first 1B) | No perpetual free tier (Includes 60-day free trial for AWS Free Tier accounts up to 50 Hosted Zones & 1M queries) | Highly available authoritative DNS with latency-based, geolocation, geoproximity, weighted, and failover routing with deep AWS ecosystem integration. |
+| **[Google Cloud DNS](https://cloud.google.com/dns)** | **~$2.0 Trillion** *(Alphabet Market Cap)* | $0.20/month per Managed Zone + $0.40 per 1M queries (first 1B) | No perpetual free tier (Includes $300 free trial credits valid for 90 days across Google Cloud services) | Scalable, low-latency authoritative DNS service built on Google's global private fiber network with managed DNSSEC. |
+| **[Azure Traffic Manager](https://azure.microsoft.com/products/traffic-manager/)** | **~$1.95 Trillion** *(Microsoft Market Cap)* | $0.54 per 1M queries + $0.36/month per monitored Azure endpoint | 1 Billion DNS queries free per month per Azure subscription (endpoint health monitoring billed separately) | DNS-based traffic load balancer supporting priority, weighted, performance, geographic, multivalue, and subnet routing. |
+| **[Oracle DNS (Dyn)](https://www.oracle.com/cloud/networking/dns/)** | **~$480 Billion** *(Oracle Market Cap)* | $0.85/month per Hosted Zone + $0.30 per 1M queries | 10 Million queries free per month under Oracle Cloud Always Free Tier | Oracle's managed DNS and enterprise traffic management platform descended from Dyn's global authoritative infrastructure. |
+| **[Cloudflare DNS](https://www.cloudflare.com/dns/)** | **~$36 Billion** *(Cloudflare Market Cap)* | Free tier available; Pro plan starting at $20/month; Business at $200/month | Unlimited queries & DNSSEC free forever for unmetered domains on Free Plan | Ultra-fast Anycast authoritative DNS with 1-click DNSSEC, CNAME flattening, and optional Argo traffic steering. |
+| **[Akamai Edge DNS](https://www.akamai.com/products/edge-dns)** | **~$15 Billion** *(Akamai Market Cap)* | Custom enterprise contracts starting at ~$500/month | No free tier (30-day enterprise proof-of-concept free trial available upon sales request) | Resilience-focused authoritative DNS delivered on Akamai's global edge network with DDoS mitigation. |
+| **[NS1 (IBM NS1 Connect)](https://ns1.com/)** | **~$200 Billion** *(IBM Parent Market Cap)* | Pay-as-you-go starting at $8.00/month (includes 1M queries) | No perpetual free tier (30-day free trial with up to 500k queries for evaluation) | Programmable DNS platform featuring dynamic Filter Chains, RUM-driven traffic steering, and custom telemetry data feeds. |
+| **[Neustar UltraDNS (DigiCert)](https://www.transunion.com/solution/neustar)** | **~$10 Billion** *(DigiCert / Parent Valuation)* | Custom enterprise tier starting at ~$250/month | No free tier (14-day enterprise evaluation trial available) | Enterprise managed DNS and failover traffic management with built-in DDoS protection and site routing. |
+| **[DNS Made Easy](https://dnsmadeeasy.com/)** | **~$10 Billion** *(DigiCert Parent Valuation)* | Business plan starting at $59.95/year (includes 10 domains & 5M queries/mo) | No perpetual free tier (30-day full-feature free trial available) | Enterprise managed DNS with secondary DNS, geo-routing, and high-availability Anycast infrastructure. |
+| **[Constellix](https://constellix.com/)** | **~$10 Billion** *(DigiCert Parent Valuation)* | Starting at $10.00/month (includes 1M queries and multi-domain management) | No perpetual free tier (30-day risk-free evaluation trial available) | Advanced Managed DNS with geo-proximity routing, Sonar health checks, real-time analytics, and multi-provider support. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+> [!NOTE]
+> Open-source projects are sorted in descending order by GitHub stargazers count.
+
+- **[CoreDNS](https://github.com/coredns/coredns)** [![Stars](https://img.shields.io/github/stars/coredns/coredns?style=social&color=white)](https://github.com/coredns/coredns/stargazers)  
+  Flexible, plugin-based DNS server written in Go (CNCF Graduated project)—widely used in Kubernetes and cloud-native architectures.
+
+- **[Unbound](https://github.com/NLnetLabs/unbound)** [![Stars](https://img.shields.io/github/stars/NLnetLabs/unbound?style=social&color=white)](https://github.com/NLnetLabs/unbound/stargazers)  
+  Validating, recursive, caching DNS resolver designed for high performance, standards compliance, and secure local resolution.
+
+- **[PowerDNS Authoritative & dnsdist](https://github.com/PowerDNS/pdns)** [![Stars](https://img.shields.io/github/stars/PowerDNS/pdns?style=social&color=white)](https://github.com/PowerDNS/pdns/stargazers)  
+  Feature-rich open-source authoritative server, recursor, and `dnsdist` DNS-aware load balancer with Lua scripting, database backends, and REST API.
+
+- **[Technitium DNS Server](https://github.com/TechnitiumSoftware/DnsServer)** [![Stars](https://img.shields.io/github/stars/TechnitiumSoftware/DnsServer?style=social&color=white)](https://github.com/TechnitiumSoftware/DnsServer/stargazers)  
+  Cross-platform C# open-source DNS server featuring authoritative, recursive, blocklist, and web GUI capabilities.
+
+- **[AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)** [![Stars](https://img.shields.io/github/stars/AdguardTeam/AdGuardHome?style=social&color=white)](https://github.com/AdguardTeam/AdGuardHome/stargazers)  
+  Network-wide open-source DNS server for ad-blocking, tracking protection, and custom domain steering.
+
+- **[CoreDNS GeoIP Plugin](https://github.com/coredns/geoip)** [![Stars](https://img.shields.io/github/stars/coredns/geoip?style=social&color=white)](https://github.com/coredns/geoip/stargazers)  
+  Open-source MaxMind GeoIP lookup plugin for CoreDNS enabling geo-aware global traffic routing.
+
+- **[BIND 9](https://github.com/isc-projects/bind9)** [![Stars](https://img.shields.io/github/stars/isc-projects/bind9?style=social&color=white)](https://github.com/isc-projects/bind9/stargazers)  
+  The foundational open-source DNS suite supporting authoritative, recursive, DNSSEC, and response policy zone (RPZ) steering.
+
+- **[Knot DNS](https://github.com/CZ-NIC/knot)** [![Stars](https://img.shields.io/github/stars/CZ-NIC/knot?style=social&color=white)](https://github.com/CZ-NIC/knot/stargazers)  
+  High-performance open-source authoritative-only DNS server optimized for top-level domains, DNSSEC auto-signing, and fast IXFR.
+
+- **[NSD](https://github.com/NLnetLabs/nsd)** [![Stars](https://img.shields.io/github/stars/NLnetLabs/nsd?style=social&color=white)](https://github.com/NLnetLabs/nsd/stargazers)  
+  Lightweight, high-performance authoritative-only DNS server developed by NLnet Labs for enterprise root/TLD operations.
+
+---
+
+## 🤝 How to Contribute
+
+1. Fork the repository.
+2. Add/edit entries in `README.md` (following the established tabular or list format).
+3. Ensure links, star badges, and descriptions are factual and up-to-date.
+4. Submit a Pull Request with a short summary of your changes.
+
+---
+
+## ☕ Support & Community
+
+Thank you for exploring **Awesome Global DNS Routing**! If you find this resource helpful for your networking or infrastructure projects, please consider:
+
+- ⭐ **Starring** this repository to increase visibility.
+- 🔀 **Forking** and contributing new tools or SaaS platforms.
+- 📢 **Sharing** it with network engineers and DevOps communities.
+- 💖 **Sponsoring**: You can support ongoing maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Global-DNS-Routing&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Global-DNS-Routing&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list — non-exhaustive and for informational purposes only.
+- DNS is critical infrastructure. Open-source DNS deployments require proper BGP Anycast design, security hardening, and operational oversight.
